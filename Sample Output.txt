@@ -1,0 +1,57 @@
+(tf-env) C:\Users\ADMIN\OneDrive\My Projects\Coding-Portfolio\Deep-Learning-MNIST-with-Keras>python MNIST_Keras.py
+Using TensorFlow backend.
+MNIST_Keras.py:22: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (3, 3), input_shape=(28, 28, 1..., padding="valid")`
+  Convolution2D(32, 3, 3, border_mode='valid', input_shape=(28, 28, 1)),
+MNIST_Keras.py:24: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (5, 5), padding="valid")`
+  Convolution2D(32, 5, 5, border_mode='valid'),
+MNIST_Keras.py:26: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (7, 7), padding="valid")`
+  Convolution2D(32, 7, 7, border_mode='valid'),
+MNIST_Keras.py:41: UserWarning: The semantics of the Keras 2 argument `steps_per_epoch` is not the same as the Keras 1 argument `samples_per_epoch`. `steps_per_epoch` is the number of batches to draw from the generator at each epoch. Basically steps_per_epoch = samples_per_epoch/batch_size. Similarly `nb_val_samples`->`validation_steps` and `val_samples`->`steps` arguments have changed. Update your method calls accordingly.
+  model.fit_generator(dg.flow(X_train, Y_train, batch_size=BATCH_SIZE), samples_per_epoch=len(X_train), nb_epoch=EPOCHS, validation_data=(X_test,Y_test))
+MNIST_Keras.py:41: UserWarning: Update your `fit_generator` call to the Keras 2 API: `fit_generator(<keras_pre..., validation_data=(array([[[..., steps_per_epoch=600, epochs=20)`
+  model.fit_generator(dg.flow(X_train, Y_train, batch_size=BATCH_SIZE), samples_per_epoch=len(X_train), nb_epoch=EPOCHS, validation_data=(X_test,Y_test))
+Epoch 1/20
+2018-12-29 14:36:51.912843: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2018-12-29 14:36:52.423036: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 4. Tune using inter_op_parallelism_threads for best performance.
+600/600 [==============================] - 458s 763ms/step - loss: 0.4139 - acc: 0.8684 - val_loss: 0.0370 - val_acc: 0.9881
+Epoch 2/20
+600/600 [==============================] - 468s 779ms/step - loss: 0.1439 - acc: 0.9579 - val_loss: 0.0277 - val_acc: 0.9899
+Epoch 3/20
+600/600 [==============================] - 440s 734ms/step - loss: 0.1097 - acc: 0.9680 - val_loss: 0.0239 - val_acc: 0.9922
+Epoch 4/20
+600/600 [==============================] - 436s 727ms/step - loss: 0.0946 - acc: 0.9723 - val_loss: 0.0178 - val_acc: 0.9942
+Epoch 5/20
+600/600 [==============================] - 454s 757ms/step - loss: 0.0831 - acc: 0.9757 - val_loss: 0.0220 - val_acc: 0.9929
+Epoch 6/20
+600/600 [==============================] - 410s 683ms/step - loss: 0.0757 - acc: 0.9780 - val_loss: 0.0189 - val_acc: 0.9936
+Epoch 7/20
+600/600 [==============================] - 421s 701ms/step - loss: 0.0706 - acc: 0.9793 - val_loss: 0.0165 - val_acc: 0.9948
+Epoch 8/20
+600/600 [==============================] - 439s 732ms/step - loss: 0.0650 - acc: 0.9813 - val_loss: 0.0164 - val_acc: 0.9944
+Epoch 9/20
+600/600 [==============================] - 422s 704ms/step - loss: 0.0618 - acc: 0.9820 - val_loss: 0.0162 - val_acc: 0.9945
+Epoch 10/20
+600/600 [==============================] - 430s 717ms/step - loss: 0.0589 - acc: 0.9834 - val_loss: 0.0141 - val_acc: 0.9955
+Epoch 11/20
+600/600 [==============================] - 449s 748ms/step - loss: 0.0568 - acc: 0.9836 - val_loss: 0.0177 - val_acc: 0.9947
+Epoch 12/20
+600/600 [==============================] - 450s 750ms/step - loss: 0.0539 - acc: 0.9847 - val_loss: 0.0173 - val_acc: 0.9938
+Epoch 13/20
+600/600 [==============================] - 433s 722ms/step - loss: 0.0524 - acc: 0.9847 - val_loss: 0.0140 - val_acc: 0.9954
+Epoch 14/20
+600/600 [==============================] - 432s 721ms/step - loss: 0.0514 - acc: 0.9845 - val_loss: 0.0164 - val_acc: 0.9947
+Epoch 15/20
+600/600 [==============================] - 439s 732ms/step - loss: 0.0480 - acc: 0.9864 - val_loss: 0.0144 - val_acc: 0.9950
+Epoch 16/20
+600/600 [==============================] - 454s 757ms/step - loss: 0.0465 - acc: 0.9864 - val_loss: 0.0158 - val_acc: 0.9954
+Epoch 17/20
+600/600 [==============================] - 433s 721ms/step - loss: 0.0458 - acc: 0.9870 - val_loss: 0.0188 - val_acc: 0.9939
+Epoch 18/20
+600/600 [==============================] - 428s 713ms/step - loss: 0.0459 - acc: 0.9870 - val_loss: 0.0138 - val_acc: 0.9957
+Epoch 19/20
+600/600 [==============================] - 395s 658ms/step - loss: 0.0428 - acc: 0.9872 - val_loss: 0.0142 - val_acc: 0.9954
+Epoch 20/20
+600/600 [==============================] - 407s 678ms/step - loss: 0.0433 - acc: 0.9873 - val_loss: 0.0133 - val_acc: 0.9956
+Accuracy: 0.9956
+
+(tf-env) C:\Users\ADMIN\OneDrive\My Projects\Coding-Portfolio\Deep-Learning-MNIST-with-Keras>
